@@ -1,0 +1,11 @@
+<ul>
+  <% @postings.each do |posting| %>
+    <li>
+      <%= image_tag posting.photo.image.url %>
+    </li>
+
+    <li>
+      <%= posting.body %>
+    </li>
+  <% end %>
+</ul>
