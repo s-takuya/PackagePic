@@ -15,7 +15,49 @@
  *= require font-awesome
  *= require_self
  */
- 
+
  ul {
-   list-style: none;
- }
+    list-style: none;
+    margin-top: 50px;
+    margin-left: -30px;
+    margin-bottom: 70px;
+
+    .gallery_list {
+      border-radius: 3px;
+
+      .user_name {
+        padding: 7px 0;
+        margin-left: 5px;
+      }
+
+      .gallery_img_list {
+        .gallery_img {
+          width: 100%;
+          overflow: hidden;
+        }
+      }
+    }
+
+    .gallery_bottom_info {
+      position: relative;
+      padding-top: 5px;
+      padding-bottom: 15px;
+      color: #565a5c;
+
+      .book_name {
+        font-size: 18px;
+        margin-bottom: 25px;
+      }
+
+      .price {
+        font-size: 22px;
+      }
+
+      .owner_image {
+        position: absolute;
+        border-radius: 33px;
+        top: -15px;
+        right: 5px;
+      }
+    }
+  }

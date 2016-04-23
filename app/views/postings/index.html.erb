@@ -1,11 +1,12 @@
 <ul>
   <% @postings.each do |posting| %>
-    <li>
-      <%= image_tag posting.photo.image.url %>
-    </li>
-
-    <li>
-      <%= posting.body %>
+    <li class='gallery_list'>
+      <div class='gallery_img_list'>
+        <%= image_tag posting.photo.image.url, class: 'gallery_img' %>
+      </div>
+      <div class='gallery_bottom_info'>
+        <%= posting.body %>
+      </div>
     </li>
   <% end %>
 </ul>
