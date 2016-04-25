@@ -30,9 +30,11 @@ source 'https://rubygems.org' do
   gem 'uglifier',           '2.7.1'
 
   group :development, :test do
-    gem 'pry-byebug',  '3.1.0'
-    gem 'pry-rails',   '0.3.4'
-    gem 'rspec-rails', '3.2.1'
+    gem 'binding_of_caller', '0.7.2'
+    gem 'better_errors',     '2.1.1'
+    gem 'pry-byebug',        '3.1.0'
+    gem 'pry-rails',         '0.3.4'
+    gem 'rspec-rails',       '3.2.1'
     gem 'sqlite3'
   end
 
